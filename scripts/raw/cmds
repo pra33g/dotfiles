@@ -1,0 +1,3 @@
+xmodmap -e "keycode 218 = Sys_Req"
+xbindkeys -k
+xmodmap -pk | grep Print

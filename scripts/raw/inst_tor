@@ -1,0 +1,5 @@
+#!/bin/bash
+#wget http://download.ap.bittorrent.com/track/beta/endpoint/utserver/os/linux-x64-ubuntu-13-04 -O utserver.tar.gz
+sudo tar xvf utserver.tar.gz -C /opt/
+sudo apt install libssl1.0.0 libssl-dev
+sudo ln -s /opt/utorrent-server-alpha-v3_3/utserver /usr/bin/utserver

@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo pkill utserver
+sudo rm -r /opt/utorrent-server-alpha-v3_3/
+sudo rm /usr/bin/utserver

@@ -1,0 +1,76 @@
+for #!/bin/bash
+endcommand=${1:-echo lol}
+clear
+cd /home/user1
+bold=$(tput bold)
+normal=$(tput sgr0)
+echo "Slotmachine has begun. Do not kill this terminal or you'll mess up directory permissions." 
+echo ...
+echo "Ending time for slot ${bold}( CAUTION! Time format must be: 05:03 or 23:34 ):- ${normal}"
+echo ">" 
+read endtime
+echo ..
+#echo "Would you like to run a command at the end? Eg: vlc Music/black/Springrise.mp3 ${bold}(Press enter to skip)${normal}"
+#read endcommand
+
+
+
+
+for folder in *;
+	do 
+		#if [[   "$folder" != "Documents" ]]	#documents has my physics notes.
+		#then
+			chmod u-r $folder 
+			echo Permissions taken for $folder.
+		#fi
+	done
+
+chmod u+rwx Documents -R
+
+
+declare -i counter=1 ; declare -i killtimer=5;
+
+programs=(firefox neverball vlc) #comment
+until [[ $( date +%H:%M ) == $endtime ]]
+do 
+	date
+
+	echo "Study slot till $endtime"
+	echo "..."
+	echo "${bold}Focus".
+	counter=$((counter+1))
+	sleep 2		
+	clear
+	
+	for program in "${programs[@]}"
+	do
+		if pgrep -x $program > /dev/null
+		then
+			for killtimer in {5..1}
+				do
+					echo "${bold}Browsing/Gaming isn't allowed. If you need to browse, wait till the end. Do not kill this terminal or you'll mess up permissions."
+					echo "${bold} $program will be terminated in.. $killtimer seconds."
+					sleep 1
+					clear
+					killtimer=$((killtimer-1))
+				done
+			pkill $program
+		fi
+	done
+		
+done
+
+for folder in *;
+	do 
+		if [[   "$folder" != "Documents" ]]
+		then
+			chmod u+r $folder 
+			echo "${normal}Permissions given for $folder".
+		fi
+	done
+
+sleep 2
+echo ...
+echo "${bold} Slotmachine session has ended. ${normal}"
+echo $endcommand
+${endcommand}
