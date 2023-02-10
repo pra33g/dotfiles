@@ -13,3 +13,4 @@ unsetopt correct
 ####
 cat ~/.cache/wal/sequences
 alias configDots='/usr/bin/git --git-dir=/home/lveritas/.cfg/ --work-tree=/home/lveritas'
+export PATH="$PATH:/$HOME/scripts/raw"
