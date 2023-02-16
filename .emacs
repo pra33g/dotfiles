@@ -18,7 +18,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (package-initialize)
-(load-theme 'mysterioso t)
+(load-theme 'misterioso t)
 
 ;;requires
 (require 'use-package)
@@ -37,6 +37,12 @@
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c-mode-hook 'hs-minor-mode)
 (add-hook 'c++-mode-hook 'eglot-ensure)
+
+;;python mode hooks
+(add-hook 'python-mode-hook 'eglot-ensure)
+(add-hook 'python-mode-hook 'hs-minor-mode)
+(add-hook 'python-mode-hook 'lsp)
+
 
 (add-hook 'after-init-hook 'global-company-mode)
 
