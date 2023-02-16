@@ -5,7 +5,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(numpydoc blacken poetry hide-mode-line lsp-python-ms python-mode evil-smartparens smartparens flymake-jslint dap-mode helm-c-yasnippet flycheck-irony company-ctags helm-company ac-clang ac-helm avy-flycheck c-eldoc company company-c-headers company-irony company-irony-c-headers eldoc flycheck helm helm-flycheck helm-lsp irony-eldoc lsp-mode gnu-elpa-keyring-update))
+   '(jedi numpydoc blacken poetry hide-mode-line lsp-python-ms python-mode evil-smartparens smartparens flymake-jslint dap-mode helm-c-yasnippet flycheck-irony company-ctags helm-company ac-clang ac-helm avy-flycheck c-eldoc company company-c-headers company-irony company-irony-c-headers eldoc flycheck helm helm-flycheck helm-lsp irony-eldoc lsp-mode gnu-elpa-keyring-update))
  '(warning-suppress-log-types '(((flymake flymake)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -18,7 +18,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (package-initialize)
-(load-theme 'misterioso t)
+(load-theme 'mysterioso t)
 
 ;;requires
 (require 'use-package)
