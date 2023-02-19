@@ -209,3 +209,9 @@
   :ensure t
   :defer t
   :hook (python-mode . eglot-ensure))
+(global-flycheck-mode)
+(setq flycheck-check-syntax-automatically '(save mode-enabled))
+
+;; set transparency
+;;(set-frame-parameter (selected-frame) 'alpha '(85 85))
+;;(add-to-list 'default-frame-alist '(alpha 85 85))
