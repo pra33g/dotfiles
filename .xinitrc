@@ -64,6 +64,3 @@ get_session(){
 }
 
 exec $(get_session "$1")
-
-########
-export QT_QPA_PLATFORMTHEME=qt5ct
