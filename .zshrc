@@ -1,4 +1,5 @@
-PS1='%n%m %~ %(?..[%?] )%# '
+#add to display exit code
+#PS1='%n%m %~ %(?..[%?] )%# '
 # AUTOCOMPLETION
 
 # initialize autocompletion
