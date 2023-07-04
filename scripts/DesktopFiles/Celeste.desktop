@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Celeste
+
+Type=Application
+Exec=wine /run/media/lveritas/ExternalHDD/Games/Celeste/Celeste.exe
+Terminal=true
+Icon=/home/lveritas/programs/cavestoryen/CaveStory/Manual/Title.png

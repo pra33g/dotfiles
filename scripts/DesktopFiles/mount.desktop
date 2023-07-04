@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=MountDisk
+Type=Application
+Exec=/home/lveritas/scripts/raw/mount.sh
+Terminal=true

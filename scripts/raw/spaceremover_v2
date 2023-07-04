@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ~ && cd Music
+find -iname "* *" | rename "s/ /_/g"

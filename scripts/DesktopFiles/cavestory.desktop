@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Cave Story
+Type=Application
+Exec=wine /home/lveritas/programs/cavestoryen/CaveStory/Doukutsu.exe
+Terminal=true
+Icon=/home/lveritas/programs/cavestoryen/CaveStory/Manual/Title.png

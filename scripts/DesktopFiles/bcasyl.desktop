@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=evince /home/lveritas/Documents/bca/BCA-Syllabus.pdf
+Terminal=false
+Icon=evince
+Type=Application
+Comment=xxx

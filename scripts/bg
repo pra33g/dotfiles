@@ -1,0 +1,4 @@
+[Colors:View]
+BackgroundNormal=33,38,38
+
+to the ~/.config/kdeglobals file to get a darker background.

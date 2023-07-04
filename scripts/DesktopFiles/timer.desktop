@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=Click-Script
+Icon=gnome-terminal
+
+
+Exec=gnome-terminal -e leafpad && nautilus
+
+#Exec=gnome-terminal -e "nautilus"
+
+
+Name[en_IN]=timer

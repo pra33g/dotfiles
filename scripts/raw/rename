@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+declare -i i;
+echo "first val:";
+read i;
+echo "extension to name:";
+read ext;
+echo "extension to rename to";
+read exto;
+ext=*$ext;
+for f in $ext;
+do
+	mv "$f" "$i.$exto";
+	i=$i+1;
+done;
