@@ -134,3 +134,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#setopt IGNORE_EOF='false'
+unsetopt ignoreeof
+
+alias clock='while [ true ]; do clear; date | cut -b 23-40 ; sleep 1; done;'
+alias timer='~/scripts/raw/timer.sh'
